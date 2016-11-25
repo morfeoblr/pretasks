@@ -1,0 +1,2 @@
+  PassengerPlane,    250, Boing-111, 10000, 270,    5000    
+  PassengerPlane,    350, Boing-111, 10000, 270,    2000    
