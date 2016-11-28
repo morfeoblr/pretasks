@@ -37,7 +37,7 @@ namespace Solution
                 Console.Write("Please Enter 2 or more strings to enter: ");
                 i = Result.GetNumber();
             }
-            List<string> Strings = new List<string>();
+            List<string> strings = new List<string>();
             for (int k = 1; k <= i; k++)
             {
                 Console.WriteLine("Please enter string #{0}", k);
@@ -48,36 +48,12 @@ namespace Solution
                     Console.WriteLine("Please enter string #{0}", k);
                     temp = Convert.ToString(Console.ReadLine());
                 }
-                Strings.Add(temp);
+                strings.Add(temp);
             }
-            int max = 0; int max2 = 0;
-            for (int k = 0; k <= i-1; k++)
-            {
-                if (max < Strings[k].Length)
-                {
-                    max2 = max;
-                    max = Strings[k].Length;
-                }
-                else if ((max2 < Strings[k].Length) && (max != Strings[k].Length))
-                {
-                    max2 = Strings[k].Length;
-                }
-            }
-            if (max2 != 0)
-            {
-                Console.WriteLine("Next string(s) has(have) 2nd max length in {0} symbols:", max2);
-                for (int k=0; k<=i-1; k++)
-                {
-                    if (max2 == Strings[k].Length)
-                    {
-                        Console.WriteLine("{0}", Strings[k]);
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("All entered strings have the same length: {0}",max);
-            }
+
+            Sorting.BubbleSort(strings);
+            Console.WriteLine("Next string has 2nd max length in {0} symbols:", strings[1].Length);
+            Console.WriteLine("{0}", strings[1]);
             Console.ReadKey();
         }
     }
