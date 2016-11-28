@@ -30,5 +30,12 @@ namespace Solution.Airplanes
         {
             return string.Format("{0} --- {1}", "Passenger plane", base.ToString());
         }
+
+        public override string ToStringToSaveInTXTFile()
+        {
+            var s = "PassengerPlane, " + this.Name + ", " + this.LoadCapacity.ToString() + ", " + this.TotalCapacity.ToString() + ", "
+                + this.LengthFly.ToString() + ", " + this.PassengerPlaces.ToString();
+            return s;
+        }
     }
 }

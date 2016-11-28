@@ -135,7 +135,7 @@ namespace Solution
         public void SerializationOfAirCompany(AirCompany airCompany)
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream fs = new FileStream("AirCompany.dat", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream("AirCompanyOutput.dat", FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, airCompany);
             }
@@ -144,7 +144,7 @@ namespace Solution
         public AirCompany DeserializationOfAirCompany()
         {
             AirCompany newCompany = new AirCompany("TestCompany-FromDatFile");
-            using (FileStream fs = new FileStream("AirCompany.dat", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream(@"Sources\AirCompany.dat", FileMode.OpenOrCreate))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
                 newCompany = (AirCompany)formatter.Deserialize(fs);
@@ -155,9 +155,39 @@ namespace Solution
             }
         }
 
+        public void SaveCompanyToTXTFile(AirCompany airCompany)
+        {
+            string path = "AirCompanyOutput.txt";
+            FileInfo file = new FileInfo(path);
+            if (!file.Exists)
+            {
+                using (StreamWriter sw = file.CreateText())
+                {
+                    foreach (var airplane in AirplanesList)
+                    {
+                        sw.WriteLine(airplane.ToStringToSaveInTXTFile());
+                    }
+                }
+                Console.WriteLine("Самолёты авиакомпании были записаны в файл AirCompany.txt в фолдер Debug");
+            }
+            else
+            {
+                Console.WriteLine("AirCompanyOutput.txt already exists in Debug folder - please remove it to proceed");
+            }
+
+     //       StreamReader stream = new StreamReader("AirCompany.txt");
+     //       while (true)
+     //       {
+     //           string airPlaneFromFile = stream.ReadLine();
+     //           if (airPlaneFromFile == null) break;
+     //           airPlaneFromFile = airPlaneFromFile.Replace(" ", string.Empty); // null reference is not handled, remove all spaced in the file
+     //           AddAirplane(airPlaneFromFile);
+     //       }
+        }
+
         public void SerializeToXML(AirCompany airCompany)
         {
-            using (FileStream fs = new FileStream("AirCompany.xml", FileMode.Create, FileAccess.Write))
+            using (FileStream fs = new FileStream("AirCompanyOutput.xml", FileMode.Create, FileAccess.Write))
             {
                 XmlSerializer serializer = new XmlSerializer(airCompany.GetType());
                 serializer.Serialize(fs, airCompany);

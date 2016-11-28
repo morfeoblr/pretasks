@@ -23,7 +23,7 @@ namespace Solution
             Console.WriteLine("2. Считать данные из файла Sources/Airplanes.txt.");
             Console.WriteLine("3. Считать данные из бинарного файла в Sources/AirCompany.dat (десериализация бинарного файла).");
             Console.WriteLine("4. Считать данные из XML файла в Sources/AirCompany.xml (десериализация xml файла).");
-            Console.WriteLine("5. Хочу поработать с БД.");
+  //          Console.WriteLine("5. Хочу поработать с БД.");
 
             int choice = Exceptions.GetNumber();
             switch (choice)
@@ -59,7 +59,7 @@ namespace Solution
                     {
                         AirCompany newCompany;
                         XmlSerializer deserializer = new XmlSerializer(typeof(AirCompany));
-                        TextReader textReader = new StreamReader("AirCompany.xml");
+                        TextReader textReader = new StreamReader(@"Sources\AirCompany.xml");
                         newCompany = (AirCompany)deserializer.Deserialize(textReader);
                         textReader.Close();
                         Console.WriteLine("Компания успешно создана, нажмите любую клавишу, чтобы продолжить...");
@@ -67,16 +67,16 @@ namespace Solution
                         Menu.MenuExecution(newCompany);
                         break;
                     }
-                case 5:
-                    {
-                        using (var cn = new SqlConnection())
-                        {
-                            Console.WriteLine("Connection object --> " + cn.GetType().Name);
-                            cn.ConnectionString = ConfigurationManager.AppSettings["cnStr"];
-                            cn.Open();
-                        }
-                            break;
-                    }
+     //           case 5:
+     //               {
+     //                   using (var cn = new SqlConnection())
+     //                   {
+     //                       Console.WriteLine("Connection object --> " + cn.GetType().Name);
+     //                       cn.ConnectionString = ConfigurationManager.AppSettings["cnStr"];
+     //                       cn.Open();
+     //                   }
+     //                       break;
+     //               }
                 default:
                         break;
             }

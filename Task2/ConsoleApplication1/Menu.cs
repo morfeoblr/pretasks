@@ -20,6 +20,7 @@ namespace Solution
             Console.WriteLine("4. Сделать выборку самолётов по вместимости и дальности полётов.");
             Console.WriteLine("5. Выполнить сериализацию Авиакомпании в бинарный файл.");
             Console.WriteLine("6. Выполнить сериализацию Авиакомпании в XML файл.");
+            Console.WriteLine("7. Выполнить запись самолётов Авиакомпании в TXT файл.");
             Console.WriteLine("0. Выйти.");
             return Exceptions.GetNumber();
         }
@@ -96,6 +97,15 @@ namespace Solution
                             Console.Clear();
                             newCompany.SerializeToXML(newCompany);
                             Console.WriteLine("Авиакомпания была сериализована в файл AirCompany.xml в фолдер Debug");
+                            Console.WriteLine("\nНажмите любую клавишу, чтобы продолжить...");
+                            Console.ReadKey();
+                            selectedMenu = Menu.ShowMenuAndGetSelectedItem();
+                            break;
+                        }
+                    case 7:
+                        {
+                            Console.Clear();
+                            newCompany.SaveCompanyToTXTFile(newCompany);
                             Console.WriteLine("\nНажмите любую клавишу, чтобы продолжить...");
                             Console.ReadKey();
                             selectedMenu = Menu.ShowMenuAndGetSelectedItem();

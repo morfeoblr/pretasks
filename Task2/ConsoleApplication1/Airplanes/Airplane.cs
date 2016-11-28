@@ -48,5 +48,8 @@ namespace Solution.Airplanes
 
         public virtual void PlaneDataValidation()    // вирутальный метод для валидации, в дальнейшем будет определён пока только для пассажирского самолёта
         { }
+
+        public virtual string ToStringToSaveInTXTFile()    // метод для записи объектов в файл
+        { return "The value is not initialized correctly"; }
     }
 }

@@ -47,5 +47,12 @@ namespace Solution.Airplanes
                     }
             }
         }
+
+        public override string ToStringToSaveInTXTFile()
+        {
+            var s = "MilitaryPlane, " + this.Name + ", " + this.LoadCapacity.ToString() + ", " + this.TotalCapacity.ToString() + ", "
+                + this.LengthFly.ToString() + ", " + this.Militaryplanetype;
+            return s;
+        }
     }
 }
