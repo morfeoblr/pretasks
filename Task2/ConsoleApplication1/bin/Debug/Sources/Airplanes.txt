@@ -1,0 +1,4 @@
+  PassengerPlane,    Boing-111, 10000, 270,    5000   , 250
+  PassengerPlane,       Boing-112, 10000, 270,    6000    , 220
+TransportPlane, Tansportir-001, 14000, 10, 7000
+MilitaryPlane, Stels-001, 11000, 2, 10500, Attack

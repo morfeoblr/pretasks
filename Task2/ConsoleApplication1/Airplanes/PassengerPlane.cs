@@ -1,19 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace Solution
+namespace Solution.Airplanes
 {
+    [Serializable]
     public class PassengerPlane : Airplane   // пассажирский самолёт
     {
+        [XmlElement("AirplaneName_PassengerPlaces")]
         public int PassengerPlaces { get; set; }  // количество пассажирских мест
 
-        // конструктор
-        public PassengerPlane(int passengerplaces, string name, int loadcapacity, int totalcapacity, int lengthfly) : base(name, loadcapacity, totalcapacity, lengthfly)
+        public PassengerPlane()
         {
-            PassengerPlaces = passengerplaces;
+        }
+
+        // конструктор
+        public PassengerPlane(string name, int loadCapacity, int totalCapacity, int lengthFly, int passengerPlaces) : base(name, loadCapacity, totalCapacity, lengthFly)
+        {
+            PassengerPlaces = passengerPlaces;
         }
 
         public override void PlaneDataValidation() // переопределение унаследованного метода для валидации

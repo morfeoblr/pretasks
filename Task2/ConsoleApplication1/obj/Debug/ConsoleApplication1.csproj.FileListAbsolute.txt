@@ -29,3 +29,13 @@ C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task3\ConsoleApplication
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task3\ConsoleApplication1\bin\Debug\Task1.exe
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task3\ConsoleApplication1\bin\Debug\Task1.pdb
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task3\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+d:\_Projects\___Students\Aliaksei_Bakhur\Task2\ConsoleApplication1\bin\Debug\Task1.exe.config
+d:\_Projects\___Students\Aliaksei_Bakhur\Task2\ConsoleApplication1\obj\Debug\Task1.exe
+d:\_Projects\___Students\Aliaksei_Bakhur\Task2\ConsoleApplication1\obj\Debug\Task1.pdb
+d:\_Projects\___Students\Aliaksei_Bakhur\Task2\ConsoleApplication1\bin\Debug\Task1.exe
+d:\_Projects\___Students\Aliaksei_Bakhur\Task2\ConsoleApplication1\bin\Debug\Task1.pdb
+d:\_Projects\___Students\Aliaksei_Bakhur\Task2\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+d:\_Projects\___Students\Aliaksei_Bakhur\Task2\ConsoleApplication1\bin\Debug\Sources\Airplanes.txt
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task2\ConsoleApplication1\bin\Debug\Sources\Airplanes.txt
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task2\ConsoleApplication1\bin\Debug\Sources\AirCompany.xml
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task2\ConsoleApplication1\bin\Debug\Sources\AirCompany.dat

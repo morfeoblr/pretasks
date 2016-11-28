@@ -1,4 +1,4 @@
-﻿namespace Solution
+﻿namespace Solution.Airplanes
 {
     // перечисление типов военных самолётов
     public enum MilitaryPlaneType

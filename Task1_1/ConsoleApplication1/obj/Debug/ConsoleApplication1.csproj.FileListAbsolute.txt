@@ -10,3 +10,6 @@ C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1\ConsoleApplication
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1\ConsoleApplication1\obj\Debug\Task1.exe
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1\ConsoleApplication1\obj\Debug\Task1.pdb
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_1\ConsoleApplication1\bin\Debug\Task1.exe.config
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_1\ConsoleApplication1\obj\Debug\Task1.exe
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_1\ConsoleApplication1\obj\Debug\Task1.pdb

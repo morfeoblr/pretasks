@@ -12,4 +12,5 @@ namespace Solution
             : base(message)
         { }
     }
+
 }

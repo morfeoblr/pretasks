@@ -23,3 +23,9 @@ C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task2.3\ConsoleApplicati
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task2.3\ConsoleApplication1\bin\Debug\Task1.exe
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task2.3\ConsoleApplication1\bin\Debug\Task1.pdb
 C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task2.3\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_4\ConsoleApplication1\bin\Debug\Task1.exe.config
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_4\ConsoleApplication1\obj\Debug\Task1.exe
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_4\ConsoleApplication1\obj\Debug\Task1.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_4\ConsoleApplication1\bin\Debug\Task1.exe
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_4\ConsoleApplication1\bin\Debug\Task1.pdb
+C:\Users\Aliaksei\Documents\Visual Studio 2015\Projects\Task1_4\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

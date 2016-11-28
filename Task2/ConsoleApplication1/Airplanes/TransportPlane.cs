@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Solution
+namespace Solution.Airplanes
 {
+    [Serializable]
     public class TransportPlane : Airplane
     {
         // конструктор
-        public TransportPlane(string name, int loadcapacity, int totalcapacity, int lengthfly) : base(name, loadcapacity, totalcapacity, lengthfly)
+        public TransportPlane(string name, int loadCapacity, int totalcapacity, int lengthfly) : base(name, loadCapacity, totalcapacity, lengthfly)
         {
             // пока без уникальных дополнительных полей
         }
+
+        public TransportPlane()
+        { }
 
         // переопределение ToString для вывода дополнительных данных у класса
         public override string ToString()
